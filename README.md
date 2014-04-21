@@ -44,7 +44,7 @@ You can manully load each of the modules as you need them; however, it may make 
 
 # Simple Qsub and Scripts 
 
-
+## Writing the Script
 The outline for this script can be found on the [Proteus wiki](https://proteusmaster.urcf.drexel.edu/urcfwiki/index.php/Writing_Job_Scripts). As an example, consider `simple-script.sh`. The `#$` tell the scheduler that these lines are to be interpreted as flags. 
 
 ```bash
@@ -72,6 +72,8 @@ The outline for this script can be found on the [Proteus wiki](https://proteusma
   python -c "print 'The task ID is $SGE_TASK_ID'""
 ```
 
+## Calling the Script
+
 We can submit the previous script to the scheduler using: 
 
 ```bash
@@ -80,3 +82,9 @@ We can submit the previous script to the scheduler using:
 ```
 at the shell. Note that the previous commands will produce an error since the project and group names were fictitious.
 
+## Monitoring Progress
+
+```bash 
+  qstat
+  qstat -f 
+```
