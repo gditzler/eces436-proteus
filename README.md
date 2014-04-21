@@ -20,4 +20,16 @@ where `$USERNAME` is your username for proteus. Note that in the shell, the `$` 
   ssh $USERNAME@proteusi01.urcf.drexel.edu
 ```
 
+# Using Modules 
+
+Proteus is using modules to setup the environment in the shell and the software that the user has available to them. The Proteus wiki has some useful information on navigating though the [modules](https://proteusmaster.urcf.drexel.edu/urcfwiki/index.php/Environment_Modules). 
+
+```bash
+  # view available modules
+  module avail 
+  # view the modules that are currently loaded 
+  module list
+```
+
+## Loading Modules & Some Useful Modules 
 
