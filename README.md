@@ -33,3 +33,12 @@ Proteus is using modules to setup the environment in the shell and the software 
 
 ## Loading Modules & Some Useful Modules 
 
+You can manully load each of the modules as you need them; however, it may make your life easier to add the following commands to your `~/.bashrc` file. 
+
+```bash
+  module load python/2.7.6
+  module load R/3.0.2
+  module load matlab/R2013a
+  module load ncbi-blast/gcc/64/2.2.29 
+```
+
