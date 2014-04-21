@@ -48,7 +48,7 @@ You can manully load each of the modules as you need them; however, it may make 
 
 ## Writing Basic Scripts 
 
-The outline for this script can be found on the [Proteus wiki](https://proteusmaster.urcf.drexel.edu/urcfwiki/index.php/Writing_Job_Scripts). 
+The outline for this script can be found on the [Proteus wiki](https://proteusmaster.urcf.drexel.edu/urcfwiki/index.php/Writing_Job_Scripts). As an example, consider `simple-script.sh`. The `#$` tell the scheduler that these lines are to be interpreted as flags. 
 
 ```bash
   #!/bin/bash
@@ -74,4 +74,12 @@ The outline for this script can be found on the [Proteus wiki](https://proteusma
   module load python/2.7.6
   python -c "print 'The task ID is $SGE_TASK_ID'""
 ```
+
+We can submit the previous script to the scheduler using: 
+
+```bash
+  newgrp fixmeGrp
+  qsub simple-script.sh  
+```
+at the shell
 
