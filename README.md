@@ -44,9 +44,6 @@ You can manully load each of the modules as you need them; however, it may make 
 
 # Simple Qsub and Scripts 
 
-## Simple `qsub`
-
-## Writing Basic Scripts 
 
 The outline for this script can be found on the [Proteus wiki](https://proteusmaster.urcf.drexel.edu/urcfwiki/index.php/Writing_Job_Scripts). As an example, consider `simple-script.sh`. The `#$` tell the scheduler that these lines are to be interpreted as flags. 
 
@@ -81,5 +78,5 @@ We can submit the previous script to the scheduler using:
   newgrp fixmeGrp
   qsub simple-script.sh  
 ```
-at the shell
+at the shell. Note that the previous commands will produce an error since the project and group names were fictitious.
 
